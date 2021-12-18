@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, ScrollView, Text, ImageBackground, StyleSheet } from 'react-native'
 import { Card } from 'react-native-elements';
 
-class Exclus extends Component {
+class Exclusives extends Component {
   render() {
     return (
       <View>
@@ -161,4 +161,4 @@ const styles = StyleSheet.create({
   },
   });
 
-  export default Exclus;
+  export default Exclusives;

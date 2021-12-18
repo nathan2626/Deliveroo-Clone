@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { View, ScrollView, Text, ImageBackground, StyleSheet } from 'react-native'
 import Header from '../Components/Header';
-import Exclus from '../Components/Exclus';
+import Exclusives from '../Components/Exclusives';
 class SecondScreen extends Component {
   render() {
     return (
       <View>
-        <Header/>
+        <Header navigateButton={() => this.props.navigation.navigate('Home')}/>
             <View>
-              <Exclus/>
+              <Exclusives/>
             </View>
       </View>
     )

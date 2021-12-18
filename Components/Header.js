@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native'
 import LottieView from 'lottie-react-native';
 
 class Header extends Component {
@@ -15,7 +15,9 @@ class Header extends Component {
       <View>
         <View style={styles.header}>
             <View style={styles.headerLeft}>
-              <LottieView source={require('../assets/scooter.json')} autoPlay loop style={styles.lottieCycle} />
+              <TouchableOpacity onPress={this.props.navigateButton}>
+                <LottieView source={require('../assets/scooter.json')} autoPlay loop style={styles.lottieCycle} />
+              </TouchableOpacity>
               <Text style={{color: 'white'}}>  Lieu sélectionné </Text>
               <Image style={styles.menuArrow} source={require('../assets/arrow-down.png')}/>
             </View>

@@ -6,7 +6,7 @@ class Footer extends Component {
     onShare = () => {
         result = Share.share({
         message:
-          'Deliveroo Clone : https://github.com/Lucasinho11/Deliveroo-React',
+          'Deliveroo Clone : https://github.com/nathan2626/Deliveroo-Clone',
       });
     };
   render() {

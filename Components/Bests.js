@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, ScrollView, Text, ImageBackground, StyleSheet } from 'react-native'
 import { Card } from 'react-native-elements';
 
-class Betters extends Component {
+class Bests extends Component {
   render() {
     return (
       <View>
@@ -156,4 +156,4 @@ const styles = StyleSheet.create({
   },
   });
 
-  export default Betters;
+  export default Bests;
